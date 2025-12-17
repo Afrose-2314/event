@@ -1,0 +1,19 @@
+<h1>🏆 Leaderboard</h1>
+
+<table border="1" align="center">
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Time (sec)</th>
+</tr>
+
+{% for row in data %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+</tr>
+{% endfor %}
+</table>
